@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 20px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: none;
+}
+
+.flex div{
+    width: 150px;
+    border: #ff0000 1px solid;
+}
+
+.div1{
+    height: 120px;
+}
+
+.div2{
+    height: 100px;
+}
+
+.div3{
+    height: 40px;
+}
+
+.flex .div4{
+    height: 200px;
+    border-color: #00ff00;
+}
+
+@media (max-width: 640px) {
+    .item{
+        order: -1;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
